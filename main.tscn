@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+
+[node name="main" type="Node2D"]
+position = Vector2( 0, -2 )
+rotation = -1.57286
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -271.019
+margin_top = 518.572
+margin_right = -231.019
+margin_bottom = 532.572
+rect_rotation = 103.896
+text = "meep"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = -155.686
+margin_top = 431.03
+margin_right = -114.686
+margin_bottom = 451.03
+rect_rotation = 113.685
+text = "start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
