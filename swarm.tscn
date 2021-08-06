@@ -7,15 +7,20 @@
 script = ExtResource( 2 )
 
 [node name="Alien" parent="." instance=ExtResource( 1 )]
-scale = Vector2( 0.5, 0.5 )
 
 [node name="rightnotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 45.4084, 4.20453 )
+position = Vector2( 294.314, 4.20453 )
 scale = Vector2( 1, 1.08409 )
 
 [node name="leftnotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -62.2263, 0.840912 )
+position = Vector2( -306.086, -2.52271 )
 scale = Vector2( 1, 1.08409 )
+
+[node name="Alien2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -153.043, -1.68182 )
+
+[node name="Alien3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 164.816, 10.0908 )
 
 [connection signal="screen_exited" from="rightnotifier" to="." method="_on_rightnotifier_screen_exited"]
 [connection signal="screen_exited" from="leftnotifier" to="." method="_on_leftnotifier_screen_exited"]

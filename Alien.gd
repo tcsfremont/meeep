@@ -1,5 +1,5 @@
 extends KinematicBody2D
-export var good=false
+export var good=-1
 export var hit=false
 export var rate:=2.0
 var elapsed:=0.0
