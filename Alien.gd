@@ -1,9 +1,9 @@
 extends KinematicBody2D
 export var good=false
 export var hit=false
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var rate:=2.0
+var elapsed:=0.0
+onready var Laser=load("res://bananatagslug.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,8 +12,15 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	var parent = get_parent()
+	if elapsed>=rate:
+		var laser=Laser.instance()
+		laser.position=position
+		parent.add_child(laser)
+		elapsed=0.0
+	else:
+		elapsed+=delta
 
 
 func _on_VisibilityNotifier2D_screen_exited():

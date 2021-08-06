@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/♫ 'HEROBRINE'S LIFE - MINECRAFT PARODY 'SOMETHING JUST LIKE THIS' - BEST MINECRAFT PARODY (2017) ♫-QJYBFkV0Kas.mp3-ea8eed573514551b305f80c9e15938fd.mp3str"
+
+[deps]
+
+source_file="res://♫ 'HEROBRINE'S LIFE - MINECRAFT PARODY 'SOMETHING JUST LIKE THIS' - BEST MINECRAFT PARODY (2017) ♫-QJYBFkV0Kas.mp3"
+dest_files=[ "res://.import/♫ 'HEROBRINE'S LIFE - MINECRAFT PARODY 'SOMETHING JUST LIKE THIS' - BEST MINECRAFT PARODY (2017) ♫-QJYBFkV0Kas.mp3-ea8eed573514551b305f80c9e15938fd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

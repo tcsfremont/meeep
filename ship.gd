@@ -3,7 +3,7 @@ extends KinematicBody2D
 export var good=true
 export var speed :=800.0
 onready var Laser=load("res://laser.tscn")
-
+var hit=false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -25,3 +25,8 @@ func _process(delta):
 		var laser=Laser.instance()
 		laser.position=position
 		parent.add_child(laser)
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	if hit:
+		get_tree().change_scene("res://lose.tscn")
